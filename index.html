@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>just-midemichael</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Hello, i am Olumide Michael Ojo. i am a front end web developer. This is my portfolio website"/> 
+    <meta name="author" content="Olumide Michael Ojo"/>
+    <meta name="revision" content="08/08/2022"/>
+    <meta name="keywords" content="jmm, Olumide, Michael, Ojo, jmm portfolio, jmm portfolio website, jmm website"/>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <link rel="icon" type="icon/jpg" href="image/olu-1.jpg" size="32x32"/>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <noscript>Please enable javascript in your web browser</noscript>
+    
+    <script>
+        function me() {
+            let sal = prompt("Hi! Please Enter your Name", "")
+            hel = "hello "; bel = "Dear"; tel = "!";
+            if (sal!=null && sal!="") {
+                document.getElementById("sal").innerHTML = hel + sal + tel;
+            }else {
+                document.getElementById("sal").innerHTML = hel + bel + tel;
+            };
+
+            var t = new Date();
+            var time = t.getHours();
+            morn = "Good Morning"; aft = "Good Afternoon"; evn = "Good Evening";
+            if (time<12) {
+                document.getElementById("time").innerHTML = morn;
+            }else if (time>=12 && time<16) {
+                document.getElementById("time").innerHTML = aft;
+            }else {
+                document.getElementById("time").innerHTML = evn;
+            };
+
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("pic-bg");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display= "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000);
+            }
+    }
+    </script>
+</head>
+<body onload="me()"> 
+    <header>
+        <div id="hambug-cont" onclick="hmDis()">
+            <img id="hamburger" src="logo-icon/hamburger-1.png">
+        </div>
+        <div class="logo-cont">
+            <p><a href="index.html"><span>JMM</span><span>portfolio</span></p></h1>
+        </div>
+        <div class="nav-cont">
+            <!-- <a href="index.html"><li style="color: teal;">HOME</li></a> -->
+            <a href="about.html"><li>ABOUT ME</li></a>
+            <a href="project.html"><li>PROJECT</li></a>
+            <!-- <a href="cv.html"><li>CV</li></a> -->
+            <a href="contact.html"><li>CONTACT</li></a>
+        </div>
+    </header>
+    <section class="header-bg"></section>
+    <section id="ham-menu-cont">
+        <div class="ham-menu-bg">
+            <a href="index.html">
+                <abbr title="home"><div><img src="logo-icon/home.png" alt="home icon"></div></abbr>
+             </a>
+             <a href="about.html"> 
+                <abbr title="about"><div><img src="logo-icon/about.png" alt="about icon"></div></abbr>
+             </a>
+             <a href="project.html">
+                <abbr title="project"><div><img src="logo-icon/project.png" alt="project icon"></div></abbr>
+             </a>
+             <a href="contact.html">
+                <abbr title="contact"><div><img src="logo-icon/contact.png" alt="contact icon"></div></abbr>
+             </a>
+        </div>
+    </section>
+
+                    <!-- HEADER ENDS HERE -->
+
+
+    <section class="contnt-body">
+        <section class="contnt-cont">
+            <div class="wrtup-cont">
+                <div class="wrtup-bg">
+                    <p><span id="sal">Lets Go!</span>&nbsp;&nbsp;<br><span class="time" id="time">Good Time</span></p>
+                    <p>Welcome to my space <span>\_(0;0)_/</span></p>
+                    
+                    <p>My name is <span class="mn">Olumide Michael</span>, i am a front-end developer & a data analyst.</p>
+                    </br>
+                        <a href="document/CV_MICHAEL_OLUMIDE.pdf" target="_blank">
+                            <button type="submit" name="cv-btn" class="cv-btn">Download CV</button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="pic-cont">
+                <div class="pic-out-bg">
+                    <a href="about.html"> 
+                        <div class="pic-bg">
+                            <img src="image/olu-1.jpg">
+                        </div>
+                        <div class="pic-bg">
+                            <img src="image/olu-1.jpg">
+                        </div>
+                        <!-- <div class="pic-bg">
+                            <img src="image/olu-1.jpg">
+                        </div>
+                        <div class="pic-bg">
+                            <img src="image/olu-2.jpg">
+                        </div> -->
+                    </a>
+                </div>
+                <div class="dot-bg">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <!-- <span class="dot"></span>
+                    <span class="dot"></span> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="sm-cont">
+            <div class="sm-bg">
+                <a href="https://github.com/just-midemichael" target="_blank">
+                   <div><img src="logo-icon/gh-icon.png" alt="github icon"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/olumide-ojo-23617918b/" target="_blank"> 
+                    <div><img src="logo-icon/lin-icon.png" alt="linkedin icon"></div>
+                </a>
+                <a href="https://www.instagram.com/just_midemichael/" target="_blank">
+                    <div><img src="logo-icon/insta-icon.png" alt="instagram icon"></div>
+                </a>
+                <a href="https://twitter.com/i_am_holumidey" target="_blank">
+                    <div><img src="logo-icon/twi-icon.png" alt="twitter icon"></div>
+                </a>
+            </div>
+        </section>
+        <section id="ham-menu-btm-bg"></section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+.body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-1 {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-color: transparent;
+font-size: 1.2em;
+}
+
+.contact {
+    margin: 40px 0 0 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 0;
+}
+
+.section-1 h1 {
+    width: 100%;
+    margin: 15px;
+    font-weight: lighter;
+    color: teal;
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 450px){
+    .contact {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin: 0;
+    }
+}
+
+.section-1 h1 {
+    text-align: center;
+    font-size: 3.0em;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 100px;
+    
+}
+
+.section-2 p {
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+}
+
+.ops {
+    width: 100%;
+    border: 2px solid teal;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.email {
+    height: 50px;
+    font-size: 1.0em;
+    text-transform: lowercase;
+}
+
+.tx-msg {
+    height: 80px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.email-btn {
+    width: 450px;
+}
+
+@media (max-width: 500px) {
+    .email-btn {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .email-btn {
+        width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .email-btn {
+        width: 250px;
+    }
+}
+
+
+
+.sm-cont {
+    background-color: transparent;
+}
+
+.sm2 {
+    justify-content: center;
+}
