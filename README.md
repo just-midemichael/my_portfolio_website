@@ -1,2 +1,2 @@
-# my_portfolio_websoite
+# my_portfolio_website
 This is my portfolio website
