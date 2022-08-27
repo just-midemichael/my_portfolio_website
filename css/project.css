@@ -71,7 +71,19 @@ font-size: 1.2em;
     flex-direction: row;
 }
 
+.bx {
+    background-color: rgb(25, 25, 25);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
 
+.bx:hover {
+    background-color: black;
+}
 .section-2 .box {
     width: 10%;
     min-width: 400px;
@@ -83,7 +95,6 @@ font-size: 1.2em;
     justify-content: center;
     align-items: flex-end;
     padding: 10px;
-    background-color: rgb(25, 25, 25);
     flex-wrap: wrap;
 }
 
@@ -105,6 +116,31 @@ font-size: 1.2em;
     overflow: hidden;
     border-radius: 15px;
 }
+
+.description {
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: justify;
+    padding: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 65px;
+    width: 90%;
+}
+
+.lang {
+    color: teal;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
 
 
 @media (max-width: 1000px) {
