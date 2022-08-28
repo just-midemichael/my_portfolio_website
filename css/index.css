@@ -113,14 +113,23 @@ header div {
     display: none;
 }
 
+.hambug-bg {
+    display: none;
+}
+
+
 #hamburger {
     height: 3.5em;
     width: 3.5em;
     cursor: pointer;
-    transition: 300ms ease;
+    transition: 200ms ease;
 }
 
 .ham-menu-bg img {
+    display: none;
+}
+
+.icon-desc {
     display: none;
 }
 
@@ -146,7 +155,9 @@ header div {
     #hambug-cont {
         display: flex;
         width: 20%;
+        flex-direction: column;
     }
+
 
     #ham-menu-cont {
         height: 80px;
@@ -163,6 +174,9 @@ header div {
         transition: 300ms linear;
         background-color: black;
         z-index: 2;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
     }
     
     #ham-menu-btm-bg {
@@ -183,14 +197,18 @@ header div {
         z-index: 1;
     }
 
-    .ham-menu-bg div {
-        width: 60px;
-        height: 50px;
+    .ham-menu-bg .icon-cont {
+        width: 50px;
+        height: 40px;
         /* border: 2px solid teal; */
         display: flex;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
+    }
+
+    .icon-desc {
+        display: block;
     }
 
     .ham-menu-bg img {
