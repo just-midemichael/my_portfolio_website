@@ -23,6 +23,7 @@ font-size: 1.2em;
     margin: 15px;
     font-weight: lighter;
     color: teal;
+    font-size: 1.0em;
 }
 
 @media (max-width: 1000px) {
@@ -82,7 +83,17 @@ font-size: 1.2em;
     width: 450px;
 }
 
+@media (max-width: 1000px) {
+    .section-1 h1 {
+        font-size: 2.5em;
+    }
+}
+
 @media (max-width: 500px) {
+    .section-1 h1 {
+        font-size: 2.0em;
+    }
+
     .email-btn {
         width: 350px;
     }

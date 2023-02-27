@@ -1,6 +1,6 @@
 
 .body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .section-1 {
@@ -28,7 +28,7 @@
 .section-1 h1 {
     color: teal;
     background-color: inherit;
-    font-size: 3.5em;
+    font-size: 2.0em;
     font-weight: lighter;
     margin-bottom: 20px;
 }
@@ -37,7 +37,7 @@
     text-align: justify;
     background-color: inherit;
     color: black;
-    font-size: 1.7em;
+    font-size: 1.2em;
     margin-bottom: 100px;
 }
 
@@ -52,7 +52,6 @@
 
 .section-1 .h1 {
     text-align: left;
-    font-size: 3.0em;
 }
 
 .section-1 .p1 {
@@ -61,7 +60,6 @@
 
 .section-1 .h2 {
     text-align: right;
-    font-size: 3.0em;
 }
 
 .section-1 .p2 {
@@ -105,37 +103,61 @@
 
 .section-2 .box {
     height: 400px;
-    width: 25%;
-    max-width: 325px;
+    width: 35%;
+    max-width: 250px;
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 5px 0px 10px black;
-    transform: rotateY(60deg) translateY(-10%);
+    transform: rotateY(0deg) translateY(-10%);
     transition: 600ms linear;
     transition: 300ms linear;
     color: black;
     box-sizing: border-box;
     overflow: hidden;
+    margin: 0 20px;
 }
 
 .section-2 .box:hover {
     box-shadow: 1px -1px 10px black;
     transform: translateY(-25%);
     transition: 600ms linear;
+    border: 2px solid teal;
 }
 
 .section-2 .box h3 {
     color: rgba(88, 194, 245, 0.9);
     text-align: center;
-    font-size: bolder;
+    font-weight: bolder;
+    font-size: 1.0em;
+}
+
+.section-2 .box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
 }
 
 .section-2 .box li {
-    color: rgba(88, 194, 245, 0.9);
+    color: rgba(88, 194, 245, 0.1);
+    text-align: start;
     list-style: none;
-    text-align: center;
     margin: 2px 0;
+    font-size: 1em;
+    padding: 2px;
+}
+
+.section-2 .box:hover li {
+    color: white;
+}
+
+.section-2 li:hover {
+    background-color: rgb(182, 36, 182) !important;
+    border-radius: 10px;
 }
 
 .section-2 .box div {
@@ -152,29 +174,14 @@
 }
 
 .section-2 .dev {
-    transform: rotateY(60deg) translateY(-1%);
-}
-
-.section-2 .dev h3 {
-    color: rgba(88, 194, 245, 0.9);
-}
-
-.section-2 .dev li {
-    color: rgba(88, 194, 245, 0.9);
+    transform: rotateY(0deg) translateY(-1%);
 }
 
 .section-2 .skl {
     background-color: black;
-    transform: rotateY(60deg) translateY(-1%);
+    transform: rotateY(0deg) translateY(-1%);
 }
 
-.section-2 .skl h2 {
-    color: rgba(88, 194, 245, 0.9);
-}
-
-.section-2 .skl li {
-    color: rgba(88, 194, 245, 0.9);
-}
 
 @media (max-width: 1000px) {
     .section-2 {
@@ -187,11 +194,17 @@
         width: 25%;
     }
 
+    .section-2 .box li {
+        font-size: 0.8em;
+    }
+
 }
 
 @media (max-width: 600px) {
     .section-2 {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .section-2 .box {
@@ -204,6 +217,10 @@
     
     .section-2 .box:hover {
         transform: translateY(-1%);
+    }
+
+    .section-2 .box li {
+        font-size: 1em;
     }
 }
 
@@ -218,6 +235,10 @@
     .section-2 .box {
         width: 80%;
         height: 300px;
+    }
+
+    .section-2 .box li {
+        font-size: 0.8em;
     }
 }
 
@@ -329,6 +350,24 @@
 .wd-cont p {
     width: 100%;
     font-size: 3.0em;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .wd-cont p {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .wd-cont p {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 350px) {
+    .wd-cont p {
+        font-size: 1.5em;
+    }
 }
 
 .wd-cont span:nth-child(1) {

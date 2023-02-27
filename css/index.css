@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 * a {
@@ -23,7 +24,7 @@ body {
     color: inherit;
     margin: inherit;
     padding: inherit;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(15, 15, 15, 1.0);
 }
 
@@ -90,13 +91,14 @@ header div {
 .nav-cont {
     display: flex;
     justify-content: space-around;
+    max-width: 50%;
 }
 
 .nav-cont li {
     margin: 0;
     border: 1px solid transparent;
-    padding: 15px;
-    width: 120px;
+    padding: 10px;
+    width: 110px;
     text-align: center;
     font-weight: bold;
     font-size: 1.0em;
@@ -288,7 +290,7 @@ header div {
     margin: 20px 0 0 0;
     max-width: 50%;
     flex-wrap: wrap;
-    flex-direction: column;  
+    flex-direction: column; 
 }
 
 .wrtup-bg {
@@ -340,6 +342,10 @@ header div {
 .wrtup-bg P:nth-child(3) span {
     font-size: 1.3em;
     color: teal;
+}
+
+#time {
+    color: gold;
 }
 
 .cv-btn {
@@ -429,7 +435,11 @@ header div {
 
     .pic-cont {
         max-width: 100%;
-        max-height: 400px;
+        max-height: 300px;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
     .wrtup-bg {
@@ -469,8 +479,8 @@ header div {
     
     
     .pic-out-bg {
-        max-height: 350px;
-        max-width: 350px;
+        max-height: 270px;
+        max-width: 270px;
     }
 
     .pic-bg {
@@ -484,6 +494,10 @@ header div {
 }
 
 @media (max-width: 760px) {
+    .pic-cont {
+        max-height: 300px;
+    }
+
     .wrtup-bg span:nth-child(1) {
         font-size: 3.2em;
     }
@@ -513,8 +527,8 @@ header div {
     }
 
     .pic-out-bg {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 250px;
+        max-width: 250px;
     }
 }
 
@@ -559,13 +573,13 @@ header div {
     } 
     
     .pic-out-bg {
-        max-width: 300px;
-        max-height: 270px;
+        max-width: 250px;
+        max-height: 250px;
     }
 
     
     .pic-bg img {
-        border-radius: 5px;
+        border-radius: 100%;
     }
 
     .dot {
@@ -581,7 +595,7 @@ header div {
     }
 
     .pic-cont {
-       max-height: 200px;
+       max-height: 350px;
     }
 
     .wrtup-bg, .pic-out-bg {
@@ -618,7 +632,7 @@ header div {
    
 
     .pic-out-bg {
-        max-height: 170px;
+        max-height: 200px;
         max-width: 200px;
     }
 
@@ -630,9 +644,12 @@ header div {
 }
 
 @media (max-width: 300px) {
+    .pic-cont {
+        max-height: 240px;
+    }
     .pic-out-bg {
-        max-height: 90%;
-        width: 100%;
+        max-height: 200px;
+        max-width: 200px;
     }
 }
 
