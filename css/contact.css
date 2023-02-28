@@ -1,6 +1,12 @@
 
-.body {
+body {
+    background-color: rgba(15, 15, 15, 1.0);
+    background-image: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: black;
 }
 
 .section-1 {
