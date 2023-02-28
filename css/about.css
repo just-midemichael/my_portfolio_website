@@ -51,8 +51,8 @@ header {
 }
 
 .section-1 img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
 }
 
@@ -60,20 +60,27 @@ header {
     transform: translate3d(100%);
 }
 
+.section-1 .about-title {
+    font-size: 2.5em;
+    text-shadow: none;
+}
+
 .section-1 .h1 {
     text-align: left;
+    font-size: 2.25em;
 }
 
 .section-1 .p1 {
-    text-align: justify;
+    text-align: left;
 }
 
 .section-1 .h2 {
-    text-align: right;
+    text-align: left;
+    font-size: 2.25em;
 }
 
 .section-1 .p2 {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -84,6 +91,16 @@ header {
     .section-1 article {
         max-width: 80%;
     }
+    .section-1 .about-title {
+        font-size: 2.0em;
+    }
+    .section-1 .h1 {
+        font-size: 1.75em;
+    }
+    .section-1 .h2 {
+        font-size: 1.75em;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -91,8 +108,15 @@ header {
         max-width: 90%;
     }
 
-    .section-1 h1 {
-        font-size: 3.0em;
+    .section-1 .about-title {
+        font-size: 1.5em;
+    }
+
+    .section-1 .h1 {
+        font-size: 1.25em;
+    }
+    .section-1 .h2 {
+        font-size: 1.25em;
     }
 
     .section-1 p {

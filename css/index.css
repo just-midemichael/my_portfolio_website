@@ -413,6 +413,7 @@ header div {
 .pic-bg .space-ship {
     height: 50%;
     width: 100%;
+    cursor: wait;
 
 }
 

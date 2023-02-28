@@ -19,15 +19,14 @@ font-size: 1.2em;
 
 .project {
     margin: 40px 0 0 0;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
 }
 
 .section-1 h1 {
     width: 100%;
     margin: 15px;
-    font-weight: lighter;
     color: teal;
 }
 
@@ -46,7 +45,9 @@ font-size: 1.2em;
 
 .section-1 h1 {
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.5em;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .section-2 {
@@ -61,7 +62,7 @@ font-size: 1.2em;
 .section-2 h1 {
     padding: 20px 0;
     color: teal;
-    font-size: 3.0em;
+    font-size: 2.25em;
     text-align: left;
     width: 90%;
     font-weight: lighter;
@@ -93,8 +94,8 @@ font-size: 1.2em;
 }
 .section-2 .box {
     width: 10%;
-    min-width: 400px;
-    height: 300px;
+    min-width: 300px;
+    height: 150px;
     /* border: 2px solid white; */
     align-self: center;
     margin: 10px;
@@ -127,7 +128,6 @@ font-size: 1.2em;
 .description {
     font-size: 13px;
     font-weight: lighter;
-    text-align: justify;
     padding: 5px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -152,8 +152,11 @@ font-size: 1.2em;
 
 
 @media (max-width: 1000px) {
+    .section-1 h1 {
+        font-size: 2em;
+    }
     .section-2 h1 {
-        font-size: 2.5em;
+        font-size: 1.75em;
     }
 
     .section-2 .box-bg {
@@ -175,8 +178,12 @@ font-size: 1.2em;
 
 
 @media (max-width: 500px) {
+    .section-1 h1 {
+        font-size: 1.5em;
+    }
+
     .section-2 h1 {
-        font-size: 2.0em;
+        font-size: 1.25em;
     }
 
     .section-2 .box-bg {
@@ -195,6 +202,14 @@ font-size: 1.2em;
 }
 
 @media (max-width: 350px) {
+    .section-1 h1 {
+        font-size: 1.25em;
+    }
+
+    .section-2 h1 {
+        font-size: 1.0em;
+    }
+
     .section-2 .box-bg {
         width: 100%;
     }
