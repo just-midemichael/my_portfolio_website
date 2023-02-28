@@ -319,7 +319,7 @@ header div {
 .wrtup-bg span:nth-child(1) {
     font-size: 3.5em;
     text-transform: capitalize;
-    text-shadow: 2px 2px black;
+    text-shadow: 0.5px 0.5px black;
 }
 
 .wrtup-bg .time {
